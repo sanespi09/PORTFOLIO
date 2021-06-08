@@ -140,16 +140,23 @@ button{
     max-width: 100%;
 }
 
-.text-conocimientos{
+.section_conocimientos{
     margin-top: 10em;
 }
 
 .conocimientos-list{
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 60%;
     list-style-type: none;
     padding: 0;
 }
 .conocimientos-item{
+    display: flex;
+    flex-direction: column;
     position: relative;
+    align-items: center;
 }
 .conocimientos-selector{
     position: absolute;
@@ -158,8 +165,15 @@ button{
     bottom: 2px;
 }
 .tech-icon{
-    font-size: 25px;
-    color: gray;
+    font-size: 80px;
+    color: grey !important;
+    filter: grayscale(1);
+    transition: all .1s;
+}
+
+.tech-icon:hover {
+    color: normal !important;
+    filter: grayscale(1);
 }
 
 /* PROYECTOS */
@@ -168,22 +182,26 @@ button{
     margin-top: 5em;
 }
 
-#pro1, #pro2{
-    padding-right: 5em
+.proyects-grid .row:last-child{
+    margin-top: 5rem !important;
 }
 
-#pro3{
-    padding-top: 4em;
+#pro1, #pro2{
+    margin-right: 5rem;
 }
+
+
 .proyect{
     position: relative;
     animation: floating 2s infinite ease-in-out;
 }
 
-.proyect > img{
+.proyect-img_wrapper img{
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
+
 
 .proyect-aside{
     width: 110px;
@@ -191,6 +209,16 @@ button{
     background-color :#80808031;
     opacity: 0;
 }
+
+
+#pro1 .proyect-aside, #pro3 .proyect-aside, #pro2 .proyect-img_wrapper img{
+    border-radius: 10px 0 0 10px;
+}
+
+#pro2 .proyect-aside, #pro1 .proyect-img_wrapper img, #pro3 .proyect-img_wrapper img{
+    border-radius: 0 10px 10px 0;
+}
+
 .proyect-aside.in{
     animation: fadein .5s ease-in-out forwards;
 }
@@ -203,6 +231,12 @@ button{
 .proyect-aside p{
     font-size: .8em;
 }
+
+.proyect-aside p:last-child{
+    margin-top: auto;
+    text-align: center;
+}
+
 
 /* CONTACTO */
 
@@ -305,3 +339,39 @@ button{
         word-spacing: .05rem;
     }
 }
+
+@media all and (max-width: 480px) {
+
+    .proyect{
+        flex-direction: column;
+    }
+
+    .proyect-aside{
+        text-align: center;
+        width: 100%;
+    }
+
+    .proyect-item{
+        padding-left: 0 !important;
+    }
+
+    #pro2{
+        margin-top: 2rem;
+    }
+
+    #pro1, #pro2{
+        margin-right: 0;
+    }
+
+    #pro1 .proyect-aside, #pro3 .proyect-aside, #pro2 .proyect-img_wrapper img{
+        border-radius: 10px 10px 0 0;
+    }
+    
+    #pro2 .proyect-aside, #pro1 .proyect-img_wrapper img, #pro3 .proyect-img_wrapper img{
+        border-radius: 0 0 10px 10px;
+    }    
+    
+    .footer-badge{
+        justify-content: space-between !important;
+    }
+} 

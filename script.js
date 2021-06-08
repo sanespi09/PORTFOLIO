@@ -31,16 +31,16 @@ function addListeners (){
     navButton[0].addEventListener("click", showNav);
     closeNavButton.addEventListener("click", hideNav);
 
-    console.log(proyects.length)
-    for(let i = 0; i < conocimientosItem.length; i++){
-        conocimientosItem[i].addEventListener('pointerenter', showPicker)
-        //conocimientosItem[i].addEventListener('pointerleave', removePicker)
-    }
+    // console.log(proyects.length)
+    // for(let i = 0; i < conocimientosItem.length; i++){
+    //     conocimientosItem[i].addEventListener('pointerenter', showPicker)
+    //     //conocimientosItem[i].addEventListener('pointerleave', removePicker)
+    // }
     for(let i = 0; i < proyects.length; i++){
         proyects[i].addEventListener('pointerenter', showProyectAside)
         proyects[i].addEventListener('pointerleave', hideProyectAside)
-
     }
+
     form.addEventListener('submit', validateForm)
 
 
