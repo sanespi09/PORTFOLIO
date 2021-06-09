@@ -5,16 +5,16 @@ const conocimientosItem = document.getElementsByClassName("conocimientos-item")
 const proyects = document.getElementsByClassName("proyect")
 const form = document.formContacto
 const imgs = document.getElementsByTagName('img');
-console.log(imgs);
+// console.log(imgs);
 
-for(let i = 0; i < imgs.length; i++){
+// for(let i = 0; i < imgs.length; i++){
     
-    imgs[i].onloadend = (e) => e.target.style.opacity = 1;
+//     imgs[i].onloadend = (e) => e.target.style.opacity = 1;
 
-    if(imgs[i].complete && imgs[i].naturalWidth != 0){
-        imgs[i].style.opacity = 1;
-    }
-} 
+//     if(imgs[i].complete && imgs[i].naturalWidth != 0){
+//         imgs[i].style.opacity = 1;
+//     }
+// } 
 
 
 addListeners()
