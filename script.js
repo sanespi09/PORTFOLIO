@@ -8,17 +8,13 @@ const imgs = document.getElementsByTagName('img');
 console.log(imgs);
 
 for(let i = 0; i < imgs.length; i++){
+    
+    imgs[i].onloadend = (e) => e.target.style.opacity = 1;
+
     if(imgs[i].complete && imgs[i].naturalWidth != 0){
         imgs[i].style.opacity = 1;
     }
-    imgs[i].onloadend = onImgLoad;
 } 
-
-function onImgLoad(e){
-    e.target.style.opacity = 1; 
-}
-
-
 
 
 addListeners()

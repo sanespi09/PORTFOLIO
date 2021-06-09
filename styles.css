@@ -21,6 +21,7 @@ a:hover{
     color: black;
 }
 
+
 img{
     opacity: 0;
 }
@@ -188,8 +189,13 @@ button{
 
 #pro1, #pro2{
     margin-right: 5rem;
+    width: 370px;
 }
 
+#pro3{
+    width: 380px;
+    height: 240px;
+}
 
 .proyect{
     position: relative;
@@ -197,14 +203,15 @@ button{
 }
 
 .proyect-img_wrapper img{
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 
 .proyect-aside{
-    width: 110px;
+    box-sizing: border-box;
+    width: 130px;
     height: 100%;
     background-color :#80808031;
     opacity: 0;
@@ -235,6 +242,7 @@ button{
 .proyect-aside p:last-child{
     margin-top: auto;
     text-align: center;
+    margin-bottom: 0;
 }
 
 
@@ -335,6 +343,10 @@ button{
         animation: none;
     }
 
+    #pro2{
+        margin-top: 2rem;
+    }
+
     .text-welcome{
         word-spacing: .05rem;
     }
@@ -361,6 +373,14 @@ button{
 
     #pro1, #pro2{
         margin-right: 0;
+    }
+
+    #pro1, #pro2, #pro3{
+        width: 70%;
+    }
+
+    #pro3{
+        height: auto;
     }
 
     #pro1 .proyect-aside, #pro3 .proyect-aside, #pro2 .proyect-img_wrapper img{
