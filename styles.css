@@ -355,6 +355,10 @@ button{
 
 @media all and (max-width: 480px) {
 
+    .conocimientos-item{
+        margin-top: 1rem;
+    }
+
     .proyect{
         flex-direction: column;
     }
