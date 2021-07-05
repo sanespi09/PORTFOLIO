@@ -1,66 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Santiago Espina</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width = device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/ccabb1bc9e.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-md navbar-light ps-3">
-                <div class="container-fluid">
-                    <a href="index.html" class="navbar-brand">
-                        <div><i style="font-size: 30px; " class="fab fa-slack-hash"></i></div>
-                        <div class="flex-column">
-                        <h6>Santi Espina <br/> <small class="text-muted">web dev.</small></h6>
-                        </div>
-                    </a>
-                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse ms-5">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">inicio</a>
-                            </li>
-                            <li class="nav-item ms-5 active">
-                                <a class="nav-link" href="proyectos.html">proyectos</a>
-                            </li>
-                            <li class="nav-item ms-5">
-                                <a class="nav-link" href="contacto.html">contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="nav-mobile-menu" id="navMobileMenu">
-                        <button class="nav-mobile_close" id="nav-mobile-close">
-                            <i class="fas fa-times" style="font-size: 30px; color: white;"></i>
-                        </button>
-                        <ul class="navbar-light">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="proyectos.html">proyectos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div class="container-fluid d-flex flex-column align-items-center">
-                <div class="text-welcome">
-                    <h1 style="font-size: 40px"class="text-center"></h1>
-                    <h1 class="text-dark text-center">Estos son algunos<br/><span class=text-brown>🗂 proyectos</span> realizados:</h1>
-                </div>
-                <div class="container-fluid proyects-grid">
-                    <div class="row justify-content-center">
+  <head>
+    <title>Santiago Espina</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/ccabb1bc9e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light ps-3">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand">
+            <div><i style="font-size: 30px" class="fab fa-slack-hash"></i></div>
+            <div class="flex-column">
+              <h6>
+                Santi Espina <br />
+                <small class="text-muted">web dev.</small>
+              </h6>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-5">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">inicio</a>
+              </li>
+              <li class="nav-item ms-5 active">
+                <a class="nav-link" href="proyectos.html">proyectos</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="contacto.html">contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-mobile-menu" id="navMobileMenu">
+            <button class="nav-mobile_close" id="nav-mobile-close">
+              <i class="fas fa-times" style="font-size: 30px; color: white"></i>
+            </button>
+            <ul class="navbar-light">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proyectos.html">proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid d-flex flex-column align-items-center">
+        <div class="text-welcome">
+          <h1 style="font-size: 40px" class="text-center"></h1>
+          <h1 class="text-dark text-center">
+            Estos son algunos<br /><span class="text-brown">🗂 proyectos</span>
+            realizados:
+          </h1>
+        </div>
+        <div class="container-fluid projects-grid" id="project-container">
+          <!-- <div class="row justify-content-center">
                         <div class="col-auto d-flex proyect-item" id="pro1">
                             <a class="proyect d-flex" href="https://estudio-terrero.pages.dev/">
                                 <div class="proyect-aside p-4 d-flex flex-column">
@@ -98,25 +116,40 @@
                             </a>
                         </div>
                     </div>    
-                  </div>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="container-fluid footer-badge d-flex justify-content-end">
-                <div class="badge-item">
-                    <a href="https://www.linkedin.com/in/santiago-espina-rocha-297a0617a/" rel="noreferrer noopener">
-                        <img alt="linked-logo" src="assets/images/logos/logo-ln.png" width="120">
-                    </a>
-                </div>
-                <div class="badge-item">
-                    <a href="https://github.com/sanespi09" rel="noreferrer noopener">
-                        <img alt="github-logo" src="assets/images/logos/logo-git.png" width="80">
-                    </a>
-                </div>
-            </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-    </body>
+                  </div> -->
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid footer-badge d-flex justify-content-end">
+        <div class="badge-item">
+          <a
+            href="https://www.linkedin.com/in/santiago-espina-rocha-297a0617a/"
+            rel="noreferrer noopener"
+          >
+            <img
+              alt="linked-logo"
+              src="assets/images/logos/logo-ln.png"
+              width="120"
+            />
+          </a>
+        </div>
+        <div class="badge-item">
+          <a href="https://github.com/sanespi09" rel="noreferrer noopener">
+            <img
+              alt="github-logo"
+              src="assets/images/logos/logo-git.png"
+              width="80"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
