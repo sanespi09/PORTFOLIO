@@ -4,7 +4,7 @@ const proyectos = [
     name: "Estudio Terrero Homepage",
     img: "./assets/images/TERRERO-PAGE.jpg",
     description:
-      "Fully responsive website that i made for my personal Homestudio",
+      "Fully responsive website that I made for my personal Homestudio.",
     tech: ["HTML", "Sass", "Javascript", "jQuery"],
     url: "https://estudio-terrero.pages.dev",
     github: "https://github.com/sanespi09/ESTUDIO-TERRERO",
@@ -14,7 +14,7 @@ const proyectos = [
     name: "Anisynth",
     img: "./assets/images/ANISYNTH-PAGE.png",
     description:
-      "Visual Sound Sinthetizer, made for a research scholarship where i studied the bonds beetween sound and image, this project really helped me develop a strong JavaScript foundation, facing a lot of challenges with code architecture and design",
+      "Visual Sound Sinthetizer, made for a research scholarship where I studied the bonds beetween sound and image, this project really helped me develop a strong JavaScript foundation, facing a lot of challenges with code architecture and design.",
     tech: ["JavaScript", "Web Audio API", "Canvas", "P5.js"],
     url: "https://anisynth.pages.dev",
     github: "https://github.com/sanespi09/ANISYNTH-UNQ",
@@ -24,7 +24,7 @@ const proyectos = [
     name: "Caiman Discos Homepage",
     img: "./assets/images/CAIMAN-PAGE.jpg",
     description:
-      "Website made for a local record label, showcasing their artists and news. This project was fullstack, i had to implement a back end in NodeJS for small blog capabilities, paired with an admin panel on the front, for easy site updates",
+      "Website made for a local record label, showcasing their artists and news. This project was fullstack, I had to implement a back end in NodeJS for small blog capabilities, paired with an admin panel on the front, for easy site updates.",
     tech: ["Sass", "jQuery", "NodeJS", "Express", "MongoDB"],
     url: "https://caimandiscos.pages.dev",
     github: "https://github.com/sanespi09/CAIMAN-BACK",
@@ -34,7 +34,7 @@ const proyectos = [
     name: "CookMaster",
     img: "./assets/images/COOK-PAGE.png",
     description:
-      "User-based, Personal recipe catalogue with ingredient based search capabilities. Made with NextJS",
+      "User-based, Personal recipe catalogue with ingredient based search capabilities. Made with NextJS.",
     tech: ["HTML", "Sass", "NextJS", "CSSModules", "Firebase"],
     url: "https://cookmaster.vercel.app",
     github: "https://github.com/sanespi09/COOK-MASTER",
@@ -177,7 +177,7 @@ function projectItem(item) {
   });
 
   return `<div class="project-img">
-            <img src=${item.img} alt='project screenshot' />
+            <img loading='lazy' src=${item.img} alt='project screenshot' />
         </div>
         <div class="project-title"><h3>${item.name}</h3></div>
         <div class="project-tech">${techComposition}</div>
