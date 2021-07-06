@@ -1,121 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Santiago Espina</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width = device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/ccabb1bc9e.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-md navbar-light ps-3">
-                <div class="container-fluid">
-                    <a href="index.html" class="navbar-brand">
-                        <div><i style="font-size: 30px; " class="fab fa-slack-hash"></i></div>
-                        <div class="flex-column">
-                        <h6>Santi Espina <br/> <small class="text-muted">web dev.</small></h6>
-                        </div>
-                    </a>
-                    <button class="navbar-toggler me-3" type="button" aria-label="Toggle navigation">
-                        <i style="font-size: 25px;" class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse ms-5">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">inicio</a>
-                            </li>
-                            <li class="nav-item ms-5">
-                                <a class="nav-link" href="proyectos.html">proyectos</a>
-                            </li>
-                            <li class="nav-item ms-5">
-                                <a class="nav-link" href="contacto.html">contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="nav-mobile-menu" id="navMobileMenu">
-                        <button class="nav-mobile_close" id="nav-mobile-close">
-                            <i class="fas fa-times" style="font-size: 30px; color: white;"></i>
-                        </button>
-                        <ul class="navbar-light">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="proyectos.html">proyectos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div class="container d-flex flex-column align-items-center">
-                <div class="text-welcome">
-                        <div class="welcome1">
-                            <h1 class="text-black">hola,<br/>soy  <span class="text-grey">Santiago Espina,</span><br/>desarrollador  <span class="text-brown">front-end.</span></h1>
-                        </div>
-                        <div class="welcome2 mt-5">
-                            <h1 class="text-brown">bienvenido<br/>a mi <span class="text-dark">portfolio</span><span style="font-size: 1.2em; margin-left: .5em;" aria-label="nerd-emoji">🤓</span></h1>
-                        </div>
-                </div>
-                <div class="section_conocimientos">
-                    <div class="row justify-content-center"> 
-                        <div class="label">
-                            <h1 class="text-brown text-center">conocimientos:</h1>
-                        </div>
-                        <div class="list mt-5 col-8">
-                            <ul class="conocimientos-list d-flex justify-content-center mx-auto">
-                                <li class="conocimientos-item">
-                                    <a class="text-grey text-regular" href="#"><h3>react</h3></a>
-                                    <i style="color: #00DEF9" class="fab fa-react tech-icon"></i>
-                                </li>
-                                <li class="conocimientos-item">
-                                    <a class="text-grey text-regular" href="#"><h3>node</h3></a>
-                                    <i style="color: #56A069" class="fab fa-node-js tech-icon"></i>
-                                </li>
-                                <li class="conocimientos-item">
-                                    <a class="text-grey text-regular" href="#"><h3>html</h3></a>
-                                    <i style="color: #FA3F29" class="fab fa-html5 tech-icon"></i>
-                                </li>
-                                <li class="conocimientos-item">
-                                    <a class="text-grey text-regular" href="#"><h3>css</h3></a>
-                                    <i style="color: #0075B2" class="fab fa-css3-alt tech-icon"></i>
-                                </li>
-                                <li  class="conocimientos-item">
-                                    <a class="text-grey text-regular" href="#"><h3>javascript</h3></a>
-                                    <i style="color: #FEDD4A" class="fab fa-js-square tech-icon"></i>
-                                </li>
-                                <li class="conocimientos-item">
-                                    <a class="text-grey text-regular tech-icon" href="#"><h3>jQuery</h3></a>
-                                    <img src="assets/icons/jquery-icon.png" class="tech-icon" alt="jquery-logo" width="70">
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
+  <head>
+    <title>Santiago Espina</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/ccabb1bc9e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light ps-3">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand">
+            <div><i style="font-size: 30px" class="fab fa-slack-hash"></i></div>
+            <div class="flex-column">
+              <h6>
+                Santi Espina <br />
+                <small class="text-muted">web dev.</small>
+              </h6>
             </div>
-        </main>
-        <footer>
-            <div class="container-fluid footer-badge d-flex justify-content-end">
-                <div class="badge-item">
-                    <a href="https://www.linkedin.com/in/santiago-espina-rocha-297a0617a/" rel="noreferrer noopener">
-                        <img alt="linked-logo" src="assets/images/logos/logo-ln.png" width="120">
-                    </a>
-                </div>
-                <div class="badge-item">
-                    <a href="https://github.com/sanespi09" rel="noreferrer noopener">
-                        <img alt="github-logo" src="assets/images/logos/logo-git.png" width="80">
-                    </a>
-                </div>
+          </a>
+          <button
+            class="navbar-toggler me-3"
+            type="button"
+            aria-label="Toggle navigation"
+          >
+            <i style="font-size: 25px" class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse ms-5">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">inicio</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="proyectos.html">proyectos</a>
+              </li>
+              <li class="nav-item ms-5">
+                <a class="nav-link" href="contacto.html">contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-mobile-menu" id="navMobileMenu">
+            <button class="nav-mobile_close" id="nav-mobile-close">
+              <i class="fas fa-times" style="font-size: 30px; color: white"></i>
+            </button>
+            <ul class="navbar-light">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proyectos.html">proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container d-flex flex-column align-items-center">
+        <div class="text-welcome">
+          <div class="welcome1">
+            <h1 class="text-black">
+              hola,<br />soy <span class="text-grey">Santiago Espina,</span
+              ><br />desarrollador <span class="text-brown">front-end.</span>
+            </h1>
+          </div>
+          <div class="welcome2 mt-5">
+            <h1 class="text-brown">
+              bienvenido<br />a mi <span class="text-dark">portfolio</span
+              ><span
+                style="font-size: 1.2em; margin-left: 0.5em"
+                aria-label="nerd-emoji"
+                >🤓</span
+              >
+            </h1>
+          </div>
+        </div>
+        <div class="section_conocimientos">
+          <div class="row justify-content-center">
+            <div class="label">
+              <h1 class="text-brown text-center">conocimientos:</h1>
             </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-    </body>
+            <div class="list mt-5 col-8">
+              <ul
+                class="conocimientos-list d-flex justify-content-center mx-auto"
+              >
+                <li class="conocimientos-item">
+                  <a class="text-grey text-regular" href="#"><h3>react</h3></a>
+                  <i style="color: #00def9" class="fab fa-react tech-icon"></i>
+                </li>
+                <li class="conocimientos-item">
+                  <a class="text-grey text-regular" href="#"><h3>node</h3></a>
+                  <i
+                    style="color: #56a069"
+                    class="fab fa-node-js tech-icon"
+                  ></i>
+                </li>
+                <li class="conocimientos-item">
+                  <a class="text-grey text-regular" href="#"><h3>html</h3></a>
+                  <i style="color: #fa3f29" class="fab fa-html5 tech-icon"></i>
+                </li>
+                <li class="conocimientos-item">
+                  <a class="text-grey text-regular" href="#"><h3>css</h3></a>
+                  <i
+                    style="color: #0075b2"
+                    class="fab fa-css3-alt tech-icon"
+                  ></i>
+                </li>
+                <li class="conocimientos-item">
+                  <a class="text-grey text-regular" href="#"><h3>JS</h3></a>
+                  <i
+                    style="color: #fedd4a"
+                    class="fab fa-js-square tech-icon"
+                  ></i>
+                </li>
+                <li class="conocimientos-item">
+                  <a class="text-grey text-regular tech-icon" href="#"
+                    ><h3>jQuery</h3></a
+                  >
+                  <img
+                    src="assets/icons/jquery-icon.png"
+                    class="tech-icon"
+                    alt="jquery-logo"
+                    width="70"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid footer-badge d-flex justify-content-end">
+        <div class="badge-item">
+          <a
+            href="https://www.linkedin.com/in/santiago-espina-rocha-297a0617a/"
+            rel="noreferrer noopener"
+          >
+            <img
+              alt="linked-logo"
+              src="assets/images/logos/logo-ln.png"
+              width="120"
+            />
+          </a>
+        </div>
+        <div class="badge-item">
+          <a href="https://github.com/sanespi09" rel="noreferrer noopener">
+            <img
+              alt="github-logo"
+              src="assets/images/logos/logo-git.png"
+              width="80"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -15,7 +15,7 @@ const proyectos = [
     img: "./assets/images/ANISYNTH-PAGE.png",
     description:
       "Visual Sound Sinthetizer, made for a research scholarship where i studied the bonds beetween sound and image, this project really helped me develop a strong JavaScript foundation, facing a lot of challenges with code architecture and design",
-    tech: ["HTML", "JavaScript", "Web Audio API", "Canvas", "P5.js"],
+    tech: ["JavaScript", "Web Audio API", "Canvas", "P5.js"],
     url: "https://anisynth.pages.dev",
     github: "https://github.com/sanespi09/ANISYNTH-UNQ",
   },
@@ -25,22 +25,14 @@ const proyectos = [
     img: "./assets/images/CAIMAN-PAGE.jpg",
     description:
       "Website made for a local record label, showcasing their artists and news. This project was fullstack, i had to implement a back end in NodeJS for small blog capabilities, paired with an admin panel on the front, for easy site updates",
-    tech: [
-      "HTML",
-      "Sass",
-      "Javascript",
-      "jQuery",
-      "NodeJS",
-      "Express",
-      "MongoDB",
-    ],
+    tech: ["Sass", "jQuery", "NodeJS", "Express", "MongoDB"],
     url: "https://caimandiscos.pages.dev",
     github: "https://github.com/sanespi09/CAIMAN-BACK",
   },
   {
     id: 4,
     name: "CookMaster",
-    img: "./assets/images/COOKMASTER-PAGE.jpg",
+    img: "./assets/images/COOK-PAGE.png",
     description:
       "User-based, Personal recipe catalogue with ingredient based search capabilities. Made with NextJS",
     tech: ["HTML", "Sass", "NextJS", "CSSModules", "Firebase"],
